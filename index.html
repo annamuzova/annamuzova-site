@@ -9,583 +9,554 @@
 <body>
 <title>Anna Muzova UGC</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap');
 
-  :root{
-    --paper:#FBF5ED;
-    --paper-card:#FFFCF7;
-    --blush:#F3DCE2;
-    --blush-deep:#E7BFCA;
-    --ink:#4A3A3C;
-    --ink-soft:#95817E;
-    --ink-faint:#B9A9A5;
-    --accent:#C48A9A;
-    --accent-deep:#A9637A;
-    --gold:#BE9A63;
-    --line:#E7D9CE;
-    --sage:#C3D0B7;
-    --sage-deep:#8FA37E;
-    --lavender:#D7CFEA;
-    --lavender-deep:#A99BC9;
-    --peach:#F3D3AE;
-    --peach-deep:#D9A164;
-    --shadow: 0 18px 36px -24px rgba(120,80,80,0.35);
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --paper:#241C1E;
-      --paper-card:#2E2325;
-      --blush:#3B2A2E;
-      --blush-deep:#4A3138;
-      --ink:#F1E5E2;
-      --ink-soft:#C9B3B0;
-      --ink-faint:#8E7876;
-      --accent:#E3AFBD;
-      --accent-deep:#EBC3CE;
-      --gold:#D8BA85;
-      --line:#453437;
-      --sage:#3C4534;
-      --sage-deep:#9FB58C;
-      --lavender:#3A3450;
-      --lavender-deep:#C1B3E0;
-      --peach:#4A3A28;
-      --peach-deep:#E8BC85;
-      --shadow: 0 18px 36px -24px rgba(0,0,0,0.6);
-    }
-  }
-  :root[data-theme="dark"]{
-    --paper:#241C1E;
-    --paper-card:#2E2325;
-    --blush:#3B2A2E;
-    --blush-deep:#4A3138;
-    --ink:#F1E5E2;
-    --ink-soft:#C9B3B0;
-    --ink-faint:#8E7876;
-    --accent:#E3AFBD;
-    --accent-deep:#EBC3CE;
-    --gold:#D8BA85;
-    --line:#453437;
-    --sage:#3C4534;
-    --sage-deep:#9FB58C;
-    --lavender:#3A3450;
-    --lavender-deep:#C1B3E0;
-    --peach:#4A3A28;
-    --peach-deep:#E8BC85;
-    --shadow: 0 18px 36px -24px rgba(0,0,0,0.6);
-  }
+:root{
+--paper:#FBF5ED;
+--paper-card:#FFFCF7;
+--blush:#F3DCE2;
+--blush-deep:#E7BFCA;
+--ink:#4A3A3C;
+--ink-soft:#95817E;
+--ink-faint:#B9A9A5;
+--accent:#C48A9A;
+--accent-deep:#A9637A;
+--gold:#BE9A63;
+--line:#E7D9CE;
+--sage:#C3D0B7;
+--sage-deep:#8FA37E;
+--lavender:#D7CFEA;
+--lavender-deep:#A99BC9;
+--peach:#F3D3AE;
+--peach-deep:#D9A164;
+--shadow: 0 18px 36px -24px rgba(120,80,80,0.35);
+}
+:root[data-theme="dark"]{
+--paper:#241C1E;
+--paper-card:#2E2325;
+--blush:#3B2A2E;
+--blush-deep:#4A3138;
+--ink:#F1E5E2;
+--ink-soft:#C9B3B0;
+--ink-faint:#8E7876;
+--accent:#E3AFBD;
+--accent-deep:#EBC3CE;
+--gold:#D8BA85;
+--line:#453437;
+--sage:#3C4534;
+--sage-deep:#9FB58C;
+--lavender:#3A3450;
+--lavender-deep:#C1B3E0;
+--peach:#4A3A28;
+--peach-deep:#E8BC85;
+--shadow: 0 18px 36px -24px rgba(0,0,0,0.6);
+}
 
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Jost', 'Helvetica Neue', Arial, sans-serif;
-    font-weight:300;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{ max-width:1040px; margin:0 auto; padding-inline:28px; }
-  a{ color:inherit; }
-  img, video{ max-width:100%; display:block; }
+*{box-sizing:border-box;}
+body{
+margin:0;
+background:var(--paper);
+color:var(--ink);
+font-family:'Jost', 'Helvetica Neue', Arial, sans-serif;
+font-weight:300;
+-webkit-font-smoothing:antialiased;
+}
+.wrap{ max-width:1040px; margin:0 auto; padding-inline:28px; }
+a{ color:inherit; }
+img, video{ max-width:100%; display:block; }
 
-  .display{ font-family:'Cormorant Garamond', serif; font-style:italic; }
-  .eyebrow{
-    font-family:'Jost', sans-serif;
-    font-size:11px;
-    letter-spacing:0.22em;
-    text-transform:uppercase;
-    color:var(--accent-deep);
-    font-weight:500;
-  }
-  .spark{ color:var(--gold); font-size:0.7em; vertical-align:middle; }
+.display{ font-family:'Cormorant Garamond', serif; font-style:italic; }
+.eyebrow{
+font-family:'Jost', sans-serif;
+font-size:11px;
+letter-spacing:0.22em;
+text-transform:uppercase;
+color:var(--accent-deep);
+font-weight:500;
+}
+.spark{ color:var(--gold); font-size:0.7em; vertical-align:middle; }
 
-  /* ---- Header ---- */
-  header{ padding-block:34px 0; }
-  .brand-row{
-    display:flex; justify-content:space-between; align-items:center;
-    gap:16px; flex-wrap:wrap;
-  }
-  .brand-name{ font-family:'Cormorant Garamond', serif; font-size:19px; letter-spacing:0.06em; font-weight:600; }
-  nav{ display:flex; gap:28px; font-size:13px; }
-  nav a{
-    text-decoration:none; color:var(--ink-soft);
-    border-bottom:1px solid transparent; padding-bottom:3px;
-    transition:color .15s, border-color .15s;
-  }
-  nav a:hover, nav a:focus-visible{ color:var(--accent-deep); border-color:var(--accent); }
+/* ---- Header ---- */
+header{ padding-block:34px 0; }
+.brand-row{
+display:flex; justify-content:space-between; align-items:center;
+gap:16px; flex-wrap:wrap;
+}
+.brand-name{ font-family:'Cormorant Garamond', serif; font-size:19px; letter-spacing:0.06em; font-weight:600; }
+nav{ display:flex; gap:28px; font-size:13px; }
+nav a{
+text-decoration:none; color:var(--ink-soft);
+border-bottom:1px solid transparent; padding-bottom:3px;
+transition:color .15s, border-color .15s;
+}
+nav a:hover, nav a:focus-visible{ color:var(--accent-deep); border-color:var(--accent); }
 
-  /* ---- Hero ---- */
-  .hero{
-    padding-block:44px 20px;
-    display:grid;
-    grid-template-columns:auto 1fr;
-    gap:44px;
-    align-items:center;
-  }
-  .hero-portrait-wrap{ position:relative; width:230px; }
-  .hero-portrait-blob{
-    position:absolute;
-    inset:-36px;
-    background:
-      radial-gradient(circle at 30% 25%, var(--lavender) 0%, transparent 55%),
-      radial-gradient(circle at 75% 70%, var(--peach) 0%, transparent 55%),
-      radial-gradient(circle, var(--blush) 0%, transparent 70%);
-    z-index:0;
-  }
-  .hero-portrait-ring{
-    position:absolute;
-    inset:-14px;
-    border:1.5px dashed var(--blush-deep);
-    border-radius:140px 140px 20px 20px;
-    transform:rotate(-3deg);
-  }
-  .hero-portrait, .hero-portrait-ring{ position:relative; z-index:1; }
-  .hero-portrait{
-    position:relative;
-    width:230px;
-    height:300px;
-    border-radius:130px 130px 16px 16px;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-    border:1px solid var(--line);
-    transform:rotate(2deg);
-    background:var(--paper-card);
-  }
-  .hero-portrait img{ width:100%; height:100%; object-fit:cover; object-position:50% 18%; }
-  .hero-text h1{
-    font-family:'Cormorant Garamond', serif;
-    font-style:italic;
-    font-weight:600;
-    font-size:clamp(44px, 6vw, 62px);
-    line-height:1.05;
-    margin:6px 0 4px;
-    color:var(--ink);
-  }
-  .hero-text .role{
-    font-family:'Cormorant Garamond', serif;
-    font-style:italic;
-    font-size:21px;
-    color:var(--accent-deep);
-    margin:0 0 16px;
-  }
-  .lede{
-    font-size:16px;
-    line-height:1.7;
-    color:var(--ink-soft);
-    max-width:46ch;
-    margin:0 0 22px;
-    font-weight:300;
-  }
-  .hero-chips{ display:flex; gap:10px; flex-wrap:wrap; }
-  .chip{
-    background:var(--blush);
-    color:var(--ink);
-    font-size:12px;
-    padding:7px 14px;
-    border-radius:20px;
-    letter-spacing:0.02em;
-    text-decoration:none;
-    display:inline-block;
-    transition:background .15s;
-  }
-  a.chip:hover{ background:var(--blush-deep); }
-  .chip strong{ font-weight:500; color:var(--accent-deep); }
+/* ---- Hero ---- */
+.hero{
+padding-block:44px 20px;
+display:grid;
+grid-template-columns:auto 1fr;
+gap:44px;
+align-items:center;
+}
+.hero-portrait-wrap{ position:relative; width:230px; }
+.hero-portrait-blob{
+position:absolute;
+inset:-36px;
+background:
+radial-gradient(circle at 30% 25%, var(--lavender) 0%, transparent 55%),
+radial-gradient(circle at 75% 70%, var(--peach) 0%, transparent 55%),
+radial-gradient(circle, var(--blush) 0%, transparent 70%);
+z-index:0;
+}
+.hero-portrait-ring{
+position:absolute;
+inset:-14px;
+border:1.5px dashed var(--blush-deep);
+border-radius:140px 140px 20px 20px;
+transform:rotate(-3deg);
+}
+.hero-portrait, .hero-portrait-ring{ position:relative; z-index:1; }
+.hero-portrait{
+position:relative;
+width:230px;
+height:300px;
+border-radius:130px 130px 16px 16px;
+overflow:hidden;
+box-shadow:var(--shadow);
+border:1px solid var(--line);
+transform:rotate(2deg);
+background:var(--paper-card);
+}
+.hero-portrait img{ width:100%; height:100%; object-fit:cover; object-position:50% 18%; }
+.hero-text h1{
+font-family:'Cormorant Garamond', serif;
+font-style:italic;
+font-weight:600;
+font-size:clamp(44px, 6vw, 62px);
+line-height:1.05;
+margin:6px 0 4px;
+color:var(--ink);
+}
+.hero-text .role{
+font-family:'Cormorant Garamond', serif;
+font-style:italic;
+font-size:21px;
+color:var(--accent-deep);
+margin:0 0 16px;
+}
+.lede{
+font-size:16px;
+line-height:1.7;
+color:var(--ink-soft);
+max-width:46ch;
+margin:0 0 22px;
+font-weight:300;
+}
+.hero-chips{ display:flex; gap:10px; flex-wrap:wrap; }
+.chip{
+background:var(--blush);
+color:var(--ink);
+font-size:12px;
+padding:7px 14px;
+border-radius:20px;
+letter-spacing:0.02em;
+text-decoration:none;
+display:inline-block;
+transition:background .15s;
+}
+a.chip:hover{ background:var(--blush-deep); }
+.chip strong{ font-weight:500; color:var(--accent-deep); }
 
-  @media (max-width:640px){
-    .hero{ grid-template-columns:1fr; text-align:center; justify-items:center; }
-    .hero-chips{ justify-content:center; }
-  }
+@media (max-width:640px){
+.hero{ grid-template-columns:1fr; text-align:center; justify-items:center; }
+.hero-chips{ justify-content:center; }
+}
 
-  /* ---- Section shell ---- */
-  section{ padding-block:60px; }
-  .section-head{ text-align:center; margin-bottom:36px; }
-  .section-head .eyebrow{ display:block; margin-bottom:8px; }
-  h2.display{
-    font-size:clamp(30px, 4.5vw, 42px);
-    font-weight:600;
-    margin:0;
-    color:var(--ink);
-  }
-  .section-note{
-    font-size:13px; color:var(--ink-faint);
-    max-width:40ch; margin:10px auto 0;
-  }
+/* ---- Section shell ---- */
+section{ padding-block:60px; }
+.section-head{ text-align:center; margin-bottom:36px; }
+.section-head .eyebrow{ display:block; margin-bottom:8px; }
+h2.display{
+font-size:clamp(30px, 4.5vw, 42px);
+font-weight:600;
+margin:0;
+color:var(--ink);
+}
+.section-note{
+font-size:13px; color:var(--ink-faint);
+max-width:40ch; margin:10px auto 0;
+}
 
-  /* ---- Reel grid ---- */
-  .category{ margin-bottom:48px; }
-  .category:last-child{ margin-bottom:0; }
-  .category-label{
-    text-align:center;
-    font-family:'Cormorant Garamond', serif;
-    font-style:italic;
-    font-weight:600;
-    font-size:23px;
-    color:var(--accent-deep);
-    margin-bottom:18px;
-    letter-spacing:0.01em;
-  }
-  .category:nth-of-type(1) .category-label{ color:var(--lavender-deep); }
-  .category:nth-of-type(2) .category-label{ color:var(--peach-deep); }
-  .reel-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(160px, 1fr));
-    gap:18px;
-  }
-  .reel-card{
-    position:relative;
-    border-radius:22px 22px 8px 8px;
-    overflow:hidden;
-    background:var(--paper-card);
-    box-shadow:var(--shadow);
-    aspect-ratio:3/4.6;
-    border:1px solid var(--line);
-  }
-  .reel-card.landscape{
-    grid-column:1/-1;
-    aspect-ratio:16/9;
-    max-width:520px;
-    margin:0 auto;
-    transform:none;
-  }
-  .reel-card video{
-    width:100%; height:100%;
-    object-fit:cover; display:block; cursor:pointer;
-  }
-  .reel-tag{
-    position:absolute; left:0; right:0; bottom:0;
-    padding:24px 14px 12px;
-    font-size:12.5px;
-    color:#fff;
-    background:linear-gradient(to top, rgba(30,18,20,0.78), rgba(30,18,20,0));
-    pointer-events:none;
-    font-family:'Jost', sans-serif;
-    font-weight:400;
-    letter-spacing:0.02em;
-  }
-  .play-hint{
-    position:absolute; top:14px; right:14px;
-    width:24px; height:24px; border-radius:50%;
-    background:rgba(255,255,255,0.85);
-    display:flex; align-items:center; justify-content:center;
-    pointer-events:none; transition:opacity .15s;
-  }
-  .reel-card.is-playing .play-hint{ opacity:0; }
-  .play-hint svg{ width:9px; height:9px; fill:var(--accent-deep); }
-  .reel-card:hover{ transform:scale(1.02); transition:transform .2s; }
+/* ---- Reel grid ---- */
+.category{ margin-bottom:48px; }
+.category:last-child{ margin-bottom:0; }
+.category-label{
+text-align:center;
+font-family:'Cormorant Garamond', serif;
+font-style:italic;
+font-weight:600;
+font-size:23px;
+color:var(--accent-deep);
+margin-bottom:18px;
+letter-spacing:0.01em;
+}
+.category:nth-of-type(1) .category-label{ color:var(--lavender-deep); }
+.category:nth-of-type(2) .category-label{ color:var(--peach-deep); }
+.reel-grid{
+display:grid;
+grid-template-columns:repeat(auto-fill, minmax(160px, 1fr));
+gap:18px;
+}
+.reel-card{
+position:relative;
+border-radius:22px 22px 8px 8px;
+overflow:hidden;
+background:var(--paper-card);
+box-shadow:var(--shadow);
+aspect-ratio:3/4.6;
+border:1px solid var(--line);
+}
+.reel-card.landscape{
+grid-column:1/-1;
+aspect-ratio:16/9;
+max-width:520px;
+margin:0 auto;
+transform:none;
+}
+.reel-card video{
+width:100%; height:100%;
+object-fit:cover; display:block; cursor:pointer;
+}
+.reel-tag{
+position:absolute; left:0; right:0; bottom:0;
+padding:24px 14px 12px;
+font-size:12.5px;
+color:#fff;
+background:linear-gradient(to top, rgba(30,18,20,0.78), rgba(30,18,20,0));
+pointer-events:none;
+font-family:'Jost', sans-serif;
+font-weight:400;
+letter-spacing:0.02em;
+}
+.play-hint{
+position:absolute; top:14px; right:14px;
+width:24px; height:24px; border-radius:50%;
+background:rgba(255,255,255,0.85);
+display:flex; align-items:center; justify-content:center;
+pointer-events:none; transition:opacity .15s;
+}
+.reel-card.is-playing .play-hint{ opacity:0; }
+.play-hint svg{ width:9px; height:9px; fill:var(--accent-deep); }
+.reel-card:hover{ transform:scale(1.02); transition:transform .2s; }
 
-  /* ---- Photo gallery ---- */
-  .photo-gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-    gap:18px;
-  }
-  .photo-gallery img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    aspect-ratio:3/4;
-    border-radius:18px 18px 6px 6px;
-    box-shadow:var(--shadow);
-    border:1px solid var(--line);
-  }
+/* ---- Photo gallery ---- */
+.photo-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+gap:18px;
+}
+.photo-gallery img{
+width:100%;
+height:100%;
+object-fit:cover;
+aspect-ratio:3/4;
+border-radius:18px 18px 6px 6px;
+box-shadow:var(--shadow);
+border:1px solid var(--line);
+}
 
-  /* ---- Brands ---- */
-  .brand-logos{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    gap:16px 22px;
-  }
-  .brand-logos--flat{
-    max-width:760px;
-    margin:0 auto;
-    padding:26px 24px;
-    background:var(--paper-card);
-    border:1px solid var(--line);
-    border-radius:24px;
-    box-shadow:var(--shadow);
-    gap:22px 30px;
-  }
-  .brand-logos img{
-    height:30px;
-    width:auto;
-    max-width:110px;
-    object-fit:contain;
-    opacity:0.82;
-    transition:opacity .15s;
-  }
-  .brand-logos img:hover{ opacity:1; }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]) .brand-logos img{
-      background:var(--paper-card);
-      border-radius:6px;
-      padding:4px 6px;
-    }
-  }
-  :root[data-theme="dark"] .brand-logos img{
-    background:var(--paper-card);
-    border-radius:6px;
-    padding:4px 6px;
-  }
+/* ---- Brands ---- */
+.brand-logos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:16px 22px;
+}
+.brand-logos--flat{
+max-width:760px;
+margin:0 auto;
+padding:26px 24px;
+background:var(--paper-card);
+border:1px solid var(--line);
+border-radius:24px;
+box-shadow:var(--shadow);
+gap:22px 30px;
+}
+.brand-logos img{
+height:30px;
+width:auto;
+max-width:110px;
+object-fit:contain;
+opacity:0.82;
+transition:opacity .15s;
+}
+.brand-logos img:hover{ opacity:1; }
+:root[data-theme="dark"] .brand-logos img{
+background:var(--paper-card);
+border-radius:6px;
+padding:4px 6px;
+}
 
-  /* ---- Rate card ---- */
-  .rate-section{ background:var(--blush); border-radius:28px; }
-  .rate-section .wrap-inner{ max-width:680px; margin:0 auto; padding:0 8px; }
-  .rate-table{ border-top:1px solid var(--blush-deep); }
-  .rate-row{
-    display:grid; grid-template-columns:1fr auto;
-    gap:16px; padding:20px 4px;
-    border-bottom:1px solid var(--blush-deep);
-    align-items:baseline;
-  }
-  .rate-name{ font-size:16px; font-weight:400; color:var(--ink); }
-  .rate-desc{ font-size:13px; color:var(--ink-soft); margin-top:4px; max-width:42ch; }
-  .rate-price{
-    font-family:'Cormorant Garamond', serif;
-    font-size:24px;
-    color:var(--gold);
-    white-space:nowrap;
-    font-variant-numeric:tabular-nums;
-  }
-  .rate-price small{ font-size:13px; color:var(--ink-soft); font-family:'Jost', sans-serif; }
-  .rate-foot{ margin-top:20px; font-size:13px; color:var(--ink-soft); text-align:center; padding-bottom:4px; }
+/* ---- Rate card ---- */
+.rate-section{ background:var(--blush); border-radius:28px; }
+.rate-section .wrap-inner{ max-width:680px; margin:0 auto; padding:0 8px; }
+.rate-table{ border-top:1px solid var(--blush-deep); }
+.rate-row{
+display:grid; grid-template-columns:1fr auto;
+gap:16px; padding:20px 4px;
+border-bottom:1px solid var(--blush-deep);
+align-items:baseline;
+}
+.rate-name{ font-size:16px; font-weight:400; color:var(--ink); }
+.rate-desc{ font-size:13px; color:var(--ink-soft); margin-top:4px; max-width:42ch; }
+.rate-price{
+font-family:'Cormorant Garamond', serif;
+font-size:24px;
+color:var(--gold);
+white-space:nowrap;
+font-variant-numeric:tabular-nums;
+}
+.rate-price small{ font-size:13px; color:var(--ink-soft); font-family:'Jost', sans-serif; }
+.rate-foot{ margin-top:20px; font-size:13px; color:var(--ink-soft); text-align:center; padding-bottom:4px; }
 
-  /* ---- Process ---- */
-  .process{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-    gap:32px;
-    text-align:center;
-  }
-  .step-num{
-    font-family:'Cormorant Garamond', serif;
-    font-style:italic;
-    font-weight:600;
-    font-size:28px;
-    color:var(--accent);
-    display:block;
-    margin-bottom:4px;
-  }
-  .step:nth-child(4n+1) .step-num{ color:var(--sage-deep); }
-  .step:nth-child(4n+2) .step-num{ color:var(--lavender-deep); }
-  .step:nth-child(4n+3) .step-num{ color:var(--peach-deep); }
-  .step:nth-child(4n+4) .step-num{ color:var(--sage-deep); }
-  .step h3{
-    font-family:'Cormorant Garamond', serif;
-    font-weight:600;
-    font-size:19px;
-    margin:0 0 8px;
-  }
-  .step p{ font-size:14px; color:var(--ink-soft); line-height:1.6; margin:0; }
+/* ---- Process ---- */
+.process{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+gap:32px;
+text-align:center;
+}
+.step-num{
+font-family:'Cormorant Garamond', serif;
+font-style:italic;
+font-weight:600;
+font-size:28px;
+color:var(--accent);
+display:block;
+margin-bottom:4px;
+}
+.step:nth-child(4n+1) .step-num{ color:var(--sage-deep); }
+.step:nth-child(4n+2) .step-num{ color:var(--lavender-deep); }
+.step:nth-child(4n+3) .step-num{ color:var(--peach-deep); }
+.step:nth-child(4n+4) .step-num{ color:var(--sage-deep); }
+.step h3{
+font-family:'Cormorant Garamond', serif;
+font-weight:600;
+font-size:19px;
+margin:0 0 8px;
+}
+.step p{ font-size:14px; color:var(--ink-soft); line-height:1.6; margin:0; }
 
-  /* ---- Contact / footer ---- */
-  footer{ padding-block:64px 48px; text-align:center; }
-  footer .display{ font-size:clamp(32px, 5vw, 44px); font-weight:600; color:var(--accent-deep); display:block; margin-bottom:18px; }
-  .contact-links{
-    display:flex; justify-content:center; gap:24px; flex-wrap:wrap;
-    margin-bottom:28px;
-  }
-  .contact-links a{
-    text-decoration:none; font-size:15px;
-    border-bottom:1px solid var(--accent);
-    padding-bottom:2px;
-  }
-  .fine{ font-size:12px; color:var(--ink-faint); }
+/* ---- Contact / footer ---- */
+footer{ padding-block:64px 48px; text-align:center; }
+footer .display{ font-size:clamp(32px, 5vw, 44px); font-weight:600; color:var(--accent-deep); display:block; margin-bottom:18px; }
+.contact-links{
+display:flex; justify-content:center; gap:24px; flex-wrap:wrap;
+margin-bottom:28px;
+}
+.contact-links a{
+text-decoration:none; font-size:15px;
+border-bottom:1px solid var(--accent);
+padding-bottom:2px;
+}
+.fine{ font-size:12px; color:var(--ink-faint); }
 
-  @media (max-width:560px){
-    header{ padding-block:26px 0; }
-    .hero{ padding-block:32px 16px; }
-    section{ padding-block:44px; }
-  }
+@media (max-width:560px){
+header{ padding-block:26px 0; }
+.hero{ padding-block:32px 16px; }
+section{ padding-block:44px; }
+}
 </style>
 
 <div class="wrap">
-  <header>
-    <div class="brand-row">
-      <div class="brand-name">ANNA MUZOVA</div>
-      <nav>
-        <a href="#work">Work</a>
-        <a href="#brands">Brands</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header>
+<div class="brand-row">
+<div class="brand-name">ANNA MUZOVA</div>
+<nav>
+<a href="#work">Work</a>
+<a href="#brands">Brands</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
 
-  <div class="hero">
-    <div class="hero-portrait-wrap">
-      <div class="hero-portrait-blob"></div>
-      <div class="hero-portrait-ring"></div>
-      <div class="hero-portrait"><img src="images/anna_hero.jpg" alt="Anna Muzova"></div>
-    </div>
-    <div class="hero-text">
-      <span class="eyebrow">UGC &amp; Content Creator — Los Angeles</span>
-      <h1 class="display">Anna Muzova</h1>
-      <p class="role">✦ UGC that looks effortless</p>
-      <p class="lede">Los Angeles-based UGC creator with an eye for cinematic, editorial-style visuals. I've created paid content for 150+ brands across fashion, beauty, wellness and home — including Valentino, Victoria's Secret, Estée Lauder, TOMS, Clarins and Shiseido. Clean, aesthetic, effortless content — the kind that makes people stop scrolling.</p>
-      <div class="hero-chips">
-        <a class="chip" href="https://instagram.com/annamuzova" target="_blank" rel="noopener">Instagram <strong>@annamuzova</strong></a>
-        <span class="chip">Format <strong>9:16, up to 30s</strong></span>
-        <span class="chip">Turnaround <strong>3–5 days</strong></span>
-      </div>
-    </div>
-  </div>
+<div class="hero">
+<div class="hero-portrait-wrap">
+<div class="hero-portrait-blob"></div>
+<div class="hero-portrait-ring"></div>
+<div class="hero-portrait"><img src="images/anna_hero.jpg" alt="Anna Muzova"></div>
+</div>
+<div class="hero-text">
+<span class="eyebrow">UGC &amp; Content Creator — Los Angeles</span>
+<h1 class="display">Anna Muzova</h1>
+<p class="role">✦ UGC that looks effortless</p>
+<p class="lede">Los Angeles-based UGC creator with an eye for cinematic, editorial-style visuals. I've created paid content for 150+ brands across fashion, beauty, wellness and home — including Valentino, Victoria's Secret, Estée Lauder, TOMS, Clarins and Shiseido. Clean, aesthetic, effortless content — the kind that makes people stop scrolling.</p>
+<div class="hero-chips">
+<a class="chip" href="https://instagram.com/annamuzova" target="_blank" rel="noopener">Instagram <strong>@annamuzova</strong></a>
+<span class="chip">Format <strong>9:16, up to 30s</strong></span>
+<span class="chip">Turnaround <strong>3–5 days</strong></span>
+</div>
+</div>
+</div>
 
-  <section id="work">
-    <div class="section-head">
-      <span class="eyebrow">Showreel</span>
-      <h2 class="display">Pieces I'm leading with</h2>
-      <p class="section-note">Tap a video to unmute — it plays silently on loop by default.</p>
-    </div>
+<section id="work">
+<div class="section-head">
+<span class="eyebrow">Showreel</span>
+<h2 class="display">Pieces I'm leading with</h2>
+<p class="section-note">Tap a video to unmute — it plays silently on loop by default.</p>
+</div>
 
-    <div class="category">
-      <div class="category-label">✦ Fashion &amp; Accessories</div>
-      <div class="reel-grid">
-        <div class="reel-card"><video src="videos/01_outfits.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Outfits — Organic video</span></div>
-        <div class="reel-card"><video src="videos/Fash_dresses.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Dresses — AD video</span></div>
-        <div class="reel-card"><video src="videos/bagg.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Micro bag — Organic video</span></div>
-        <div class="reel-card"><video src="videos/10_valentino.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Valentino — Organic video</span></div>
-        <div class="reel-card"><video src="videos/sportshoes.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Sport shoes — Cinematic organic video</span></div>
-        <div class="reel-card"><video src="videos/VS_unpacking.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">VS — Cinematic unpacking video</span></div>
-        <div class="reel-card"><video src="videos/underwear.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Underwear — AD video (voiceover)</span></div>
-        <div class="reel-card"><video src="videos/Tos_shoes.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">TOMS shoes — AD video (voiceover)</span></div>
-        <div class="reel-card"><video src="videos/sportwear.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Sportswear — Organic video</span></div>
-        <div class="reel-card"><video src="videos/jewerly.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Jewelry — AD video (voiceover)</span></div>
-        <div class="reel-card landscape"><video src="videos/Victoria_secret_horizontal.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Victoria&#39;s Secret — Cinematic organic video</span></div>
-      </div>
-    </div>
+<div class="category">
+<div class="category-label">✦ Fashion &amp; Accessories</div>
+<div class="reel-grid">
+<div class="reel-card"><video src="videos/01_outfits.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Outfits — Organic video</span></div>
+<div class="reel-card"><video src="videos/Fash_dresses.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Dresses — AD video</span></div>
+<div class="reel-card"><video src="videos/bagg.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Micro bag — Organic video</span></div>
+<div class="reel-card"><video src="videos/10_valentino.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Valentino — Organic video</span></div>
+<div class="reel-card"><video src="videos/sportshoes.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Sport shoes — Cinematic organic video</span></div>
+<div class="reel-card"><video src="videos/VS_unpacking.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">VS — Cinematic unpacking video</span></div>
+<div class="reel-card"><video src="videos/underwear.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Underwear — AD video (voiceover)</span></div>
+<div class="reel-card"><video src="videos/Tos_shoes.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">TOMS shoes — AD video (voiceover)</span></div>
+<div class="reel-card"><video src="videos/sportwear.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Sportswear — Organic video</span></div>
+<div class="reel-card"><video src="videos/jewerly.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Jewelry — AD video (voiceover)</span></div>
+<div class="reel-card landscape"><video src="videos/Victoria_secret_horizontal.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Victoria&#39;s Secret — Cinematic organic video</span></div>
+</div>
+</div>
 
-    <div class="category">
-      <div class="category-label">✦ Beauty, Skincare &amp; Hair</div>
-      <div class="reel-grid">
-        <div class="reel-card"><video src="videos/08_obagi.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Obagi — AD video (voiceover)</span></div>
-        <div class="reel-card"><video src="videos/H.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Hair — Organic video</span></div>
-        <div class="reel-card"><video src="videos/Mascara.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Mascara — Organic testimonial video</span></div>
-        <div class="reel-card"><video src="videos/06_foundation.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Foundation — AD video (voiceover)</span></div>
-        <div class="reel-card"><video src="videos/Oil.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Oil — Organic video</span></div>
-        <div class="reel-card"><video src="videos/Lipstick_Clarins.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Lipstick — Organic video</span></div>
-        <div class="reel-card"><video src="videos/Dry_shampoo.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Dry shampoo — AD video</span></div>
-        <div class="reel-card"><video src="videos/Sunscreen_Shiseido.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Shiseido — Organic video</span></div>
-        <div class="reel-card"><video src="videos/Lips.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Lips — Organic video</span></div>
-        <div class="reel-card"><video src="videos/body_bronzer.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Body bronzer — AD video (voiceover)</span></div>
-      </div>
-    </div>
+<div class="category">
+<div class="category-label">✦ Beauty, Skincare &amp; Hair</div>
+<div class="reel-grid">
+<div class="reel-card"><video src="videos/08_obagi.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Obagi — AD video (voiceover)</span></div>
+<div class="reel-card"><video src="videos/H.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Hair — Organic video</span></div>
+<div class="reel-card"><video src="videos/Mascara.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Mascara — Organic testimonial video</span></div>
+<div class="reel-card"><video src="videos/06_foundation.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Foundation — AD video (voiceover)</span></div>
+<div class="reel-card"><video src="videos/Oil.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Oil — Organic video</span></div>
+<div class="reel-card"><video src="videos/Lipstick_Clarins.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Lipstick — Organic video</span></div>
+<div class="reel-card"><video src="videos/Dry_shampoo.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Dry shampoo — AD video</span></div>
+<div class="reel-card"><video src="videos/Sunscreen_Shiseido.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Shiseido — Organic video</span></div>
+<div class="reel-card"><video src="videos/Lips.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Lips — Organic video</span></div>
+<div class="reel-card"><video src="videos/body_bronzer.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Body bronzer — AD video (voiceover)</span></div>
+</div>
+</div>
 
-    <div class="category">
-      <div class="category-label">✦ Wellness &amp; Homecare</div>
-      <div class="reel-grid">
-        <div class="reel-card"><video src="videos/supplements.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Supplements — Cinematic AD video (voiceover)</span></div>
-        <div class="reel-card"><video src="videos/summer_drink.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Borjomi — AD video (voiceover)</span></div>
-        <div class="reel-card"><video src="videos/wellness.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Vitafusion — AD video (voiceover)</span></div>
-        <div class="reel-card"><video src="videos/oxiclean2.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">OxiClean — AD video (voiceover)</span></div>
-        <div class="reel-card"><video src="videos/prolon_wellness.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Prolon — AD review video (voiceover)</span></div>
-      </div>
-    </div>
-  </section>
+<div class="category">
+<div class="category-label">✦ Wellness &amp; Homecare</div>
+<div class="reel-grid">
+<div class="reel-card"><video src="videos/supplements.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Supplements — Cinematic AD video (voiceover)</span></div>
+<div class="reel-card"><video src="videos/summer_drink.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Borjomi — AD video (voiceover)</span></div>
+<div class="reel-card"><video src="videos/wellness.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Vitafusion — AD video (voiceover)</span></div>
+<div class="reel-card"><video src="videos/oxiclean2.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">OxiClean — AD video (voiceover)</span></div>
+<div class="reel-card"><video src="videos/prolon_wellness.mp4" loop muted playsinline preload="metadata"></video><span class="play-hint" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M0 0 10 5 0 10z"/></svg></span><span class="reel-tag">Prolon — AD review video (voiceover)</span></div>
+</div>
+</div>
+</section>
 
-  <section id="gallery">
-    <div class="section-head">
-      <span class="eyebrow">Photography</span>
-      <h2 class="display">A few stills</h2>
-    </div>
-    <div class="photo-gallery">
-      <img src="images/gallery/tezza-6179.jpg" alt="Anna Muzova — editorial look">
-      <img src="images/gallery/tezza-1546.jpg" alt="Anna Muzova — TOMS product shot">
-      <img src="images/gallery/tezza-6787.jpg" alt="Anna Muzova — sandals detail">
-      <img src="images/gallery/tezza-6811.jpg" alt="Anna Muzova — perfume flat lay">
-    </div>
-  </section>
+<section id="gallery">
+<div class="section-head">
+<span class="eyebrow">Photography</span>
+<h2 class="display">A few stills</h2>
+</div>
+<div class="photo-gallery">
+<img src="images/gallery/tezza-6179.jpg" alt="Anna Muzova — editorial look">
+<img src="images/gallery/tezza-1546.jpg" alt="Anna Muzova — TOMS product shot">
+<img src="images/gallery/tezza-6787.jpg" alt="Anna Muzova — sandals detail">
+<img src="images/gallery/tezza-6811.jpg" alt="Anna Muzova — perfume flat lay">
+</div>
+</section>
 
-  <section id="brands">
-    <div class="section-head">
-      <span class="eyebrow">150+ brands</span>
-      <h2 class="display">Brands I've worked with</h2>
-      <p class="section-note">Paid UGC partnerships, by category.</p>
-    </div>
+<section id="brands">
+<div class="section-head">
+<span class="eyebrow">150+ brands</span>
+<h2 class="display">Brands I've worked with</h2>
+<p class="section-note">Paid UGC partnerships, by category.</p>
+</div>
 
-    <div class="brand-logos brand-logos--flat">
-      <img src="images/logos/toms.png" alt="TOMS">
-      <img src="images/logos/ogl-move.png" alt="OGL Move">
-      <img src="images/logos/micas.png" alt="Micas">
-      <img src="images/logos/rihoas.png" alt="Rihoas">
-      <img src="images/logos/victorias-secret.png" alt="Victoria's Secret">
-      <img src="images/logos/neutrogena.png" alt="Neutrogena">
-      <img src="images/logos/obagi.png" alt="Obagi">
-      <img src="images/logos/valentino.png" alt="Valentino">
-      <img src="images/logos/clarins.png" alt="Clarins">
-      <img src="images/logos/shiseido.png" alt="Shiseido">
-      <img src="images/logos/estee-lauder.png" alt="Estée Lauder">
-      <img src="images/logos/natural-factors.png" alt="Natural Factors">
-      <img src="images/logos/vitafusion.png" alt="Vitafusion">
-      <img src="images/logos/borjomi.png" alt="Borjomi">
-      <img src="images/logos/hilton.png" alt="Hilton">
-      <img src="images/logos/oxiclean.png" alt="OxiClean">
-      <img src="images/logos/arm-hammer.png" alt="Arm &amp; Hammer">
-    </div>
-  </section>
+<div class="brand-logos brand-logos--flat">
+<img src="images/logos/toms.png" alt="TOMS">
+<img src="images/logos/ogl-move.png" alt="OGL Move">
+<img src="images/logos/micas.png" alt="Micas">
+<img src="images/logos/rihoas.png" alt="Rihoas">
+<img src="images/logos/victorias-secret.png" alt="Victoria's Secret">
+<img src="images/logos/neutrogena.png" alt="Neutrogena">
+<img src="images/logos/obagi.png" alt="Obagi">
+<img src="images/logos/valentino.png" alt="Valentino">
+<img src="images/logos/clarins.png" alt="Clarins">
+<img src="images/logos/shiseido.png" alt="Shiseido">
+<img src="images/logos/estee-lauder.png" alt="Estée Lauder">
+<img src="images/logos/natural-factors.png" alt="Natural Factors">
+<img src="images/logos/vitafusion.png" alt="Vitafusion">
+<img src="images/logos/borjomi.png" alt="Borjomi">
+<img src="images/logos/hilton.png" alt="Hilton">
+<img src="images/logos/oxiclean.png" alt="OxiClean">
+<img src="images/logos/arm-hammer.png" alt="Arm &amp; Hammer">
+</div>
+</section>
 
-  <section>
-    <div class="section-head">
-      <span class="eyebrow">Process</span>
-      <h2 class="display">How we'll work together</h2>
-    </div>
-    <div class="process">
-      <div class="step">
-        <span class="step-num">01</span>
-        <h3>Brief &amp; Alignment</h3>
-        <p>We go over your brand, goals and the product together — so we're aligned on the concept before filming starts.</p>
-      </div>
-      <div class="step">
-        <span class="step-num">02</span>
-        <h3>Concept</h3>
-        <p>I put together a clear concept with a strong hook and a short story that shows the product naturally.</p>
-      </div>
-      <div class="step">
-        <span class="step-num">03</span>
-        <h3>Filming &amp; Editing</h3>
-        <p>I shoot and edit everything myself — clean visuals, natural light, a look that feels effortless.</p>
-      </div>
-      <div class="step">
-        <span class="step-num">04</span>
-        <h3>Delivery</h3>
-        <p>You get the finished video on time, with a round of revisions included.</p>
-      </div>
-    </div>
-  </section>
+<section>
+<div class="section-head">
+<span class="eyebrow">Process</span>
+<h2 class="display">How we'll work together</h2>
+</div>
+<div class="process">
+<div class="step">
+<span class="step-num">01</span>
+<h3>Brief &amp; Alignment</h3>
+<p>We go over your brand, goals and the product together — so we're aligned on the concept before filming starts.</p>
+</div>
+<div class="step">
+<span class="step-num">02</span>
+<h3>Concept</h3>
+<p>I put together a clear concept with a strong hook and a short story that shows the product naturally.</p>
+</div>
+<div class="step">
+<span class="step-num">03</span>
+<h3>Filming &amp; Editing</h3>
+<p>I shoot and edit everything myself — clean visuals, natural light, a look that feels effortless.</p>
+</div>
+<div class="step">
+<span class="step-num">04</span>
+<h3>Delivery</h3>
+<p>You get the finished video on time, with a round of revisions included.</p>
+</div>
+</div>
+</section>
 
-  <footer id="contact">
-    <span class="display">Let's work together</span>
-    <div class="contact-links">
-      <a href="https://instagram.com/annamuzova" target="_blank" rel="noopener">Instagram — @annamuzova</a>
-      <a href="https://tiktok.com/@muzovaa" target="_blank" rel="noopener">TikTok — @muzovaa</a>
-      <a href="mailto:pr.muzova@gmail.com">pr.muzova@gmail.com</a>
-    </div>
-    <p class="fine">Los Angeles, CA · Portfolio updated September 2026</p>
-  </footer>
+<footer id="contact">
+<span class="display">Let's work together</span>
+<div class="contact-links">
+<a href="https://instagram.com/annamuzova" target="_blank" rel="noopener">Instagram — @annamuzova</a>
+<a href="https://tiktok.com/@muzovaa" target="_blank" rel="noopener">TikTok — @muzovaa</a>
+<a href="mailto:pr.muzova@gmail.com">pr.muzova@gmail.com</a>
+</div>
+<p class="fine">Los Angeles, CA · Portfolio updated September 2026</p>
+</footer>
 </div>
 
 <script>
-  document.querySelectorAll('.reel-card').forEach(function(card){
-    var video = card.querySelector('video');
-    video.addEventListener('click', function(){
-      if (video.muted) {
-        document.querySelectorAll('.reel-card video').forEach(function(v){
-          if (v !== video) { v.muted = true; v.parentElement.classList.remove('is-playing'); }
-        });
-        video.muted = false;
-        card.classList.add('is-playing');
-      } else {
-        video.muted = true;
-        card.classList.remove('is-playing');
-      }
-    });
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) { video.play().catch(function(){}); }
-        else { video.pause(); }
-      });
-    }, {threshold:0.4});
-    io.observe(video);
-  });
+document.querySelectorAll('.reel-card').forEach(function(card){
+var video = card.querySelector('video');
+video.addEventListener('click', function(){
+if (video.muted) {
+document.querySelectorAll('.reel-card video').forEach(function(v){
+if (v !== video) { v.muted = true; v.parentElement.classList.remove('is-playing'); }
+});
+video.muted = false;
+card.classList.add('is-playing');
+} else {
+video.muted = true;
+card.classList.remove('is-playing');
+}
+});
+var io = new IntersectionObserver(function(entries){
+entries.forEach(function(entry){
+if (entry.isIntersecting) { video.play().catch(function(){}); }
+else { video.pause(); }
+});
+}, {threshold:0.4});
+io.observe(video);
+});
 </script>
 
 </body>
