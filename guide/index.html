@@ -76,6 +76,14 @@ section{padding:72px 0}
 .price small{font-size:18px;color:var(--muted);font-family:Inter,sans-serif}
 s.old{opacity:.6;font-weight:400;text-decoration-thickness:1.5px;margin-right:2px}
 .price s.old{font-size:34px;color:var(--muted);margin-right:10px;vertical-align:middle}
+.bump2{display:grid;grid-template-columns:100px 1fr;gap:16px;align-items:center;text-align:left;margin-top:18px;padding:16px;border-radius:18px;background:linear-gradient(135deg,#FBEDE7,#F4DCD2);border:2px solid var(--terra);animation:glow 2.4s ease-in-out infinite}
+.bump2 img{width:100px;height:100px;border-radius:14px;object-fit:cover}
+.bump2 h3{font-size:19px;margin:6px 0 4px}
+.bump2 p{font-size:14px;color:var(--ink);line-height:1.45}
+.bump2 .hint{color:var(--terra);margin-top:6px}
+.pill{display:inline-block;white-space:nowrap;font-size:12px;font-weight:700;color:#fff;background:var(--terra);padding:4px 10px;border-radius:999px;letter-spacing:.03em}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(180,85,62,.0)}50%{box-shadow:0 0 0 6px rgba(180,85,62,.18)}}
+@media (prefers-reduced-motion:reduce){.bump2{animation:none}}
 .launch{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--terra);background:var(--blush);padding:5px 14px;border-radius:999px}
 .checks{list-style:none;margin:22px 0 26px;text-align:left}
 .checks li{padding:8px 0 8px 34px;position:relative;border-bottom:1px dashed var(--line)}
@@ -111,7 +119,7 @@ footer a{color:#F4B9A8}
 </head>
 <body>
 
-<div class="topbar">UGC Essentials Pack · <s class="old">$29</s> <b>$18</b> · instant download · <a href="#get">Get it →</a></div>
+<div class="topbar">UGC Essentials Pack · <b>$18</b> · instant download · <a href="#get">Get it →</a></div>
 
 <!-- HERO -->
 <header class="hero">
@@ -125,7 +133,7 @@ footer a{color:#F4B9A8}
     <div><b>2023</b>creating UGC since</div>
     <div><b>220+</b>brands to pitch</div>
    </div>
-   <a class="btn" href="#get">Get the guide for <s class="old">$29</s> $18 →</a>
+   <a class="btn" href="#get">Get the guide for $18 →</a>
    <p class="note">Instant PDF download · Works on phone and laptop</p>
   </div>
   <div class="mock" aria-label="Preview of the UGC Essentials Pack">
@@ -231,8 +239,7 @@ footer a{color:#F4B9A8}
   <div class="kicker">Start today</div>
   <h2 style="margin-bottom:28px">Get the <em>UGC Essentials Pack</em></h2>
   <div class="price-card">
-   <div class="price"><s class="old">$29</s>$18 <small>one-time</small></div>
-   <div class="launch">Launch price · goes up to $29 on January 1</div>
+   <div class="price">$18 <small>one-time</small></div>
    <ul class="checks">
     <li>220+ brand list with contacts</li>
     <li>3 pitch templates + follow-up</li>
@@ -242,7 +249,15 @@ footer a{color:#F4B9A8}
     <li>Toolkit + your first 7 days plan</li>
    </ul>
    <a class="btn block buy" href="https://buy.stripe.com/14A00l3xne2k0xx2Wb0sU00">Get instant access →</a>
-   <div class="bump"><b>At checkout:</b> add the <b>UGC Rate Card Kit</b> for just $4. Know exactly what to charge, with a ready rate card and replies for tricky brand questions.</div>
+   <div class="bump2">
+    <img src="assets/ratecard_addon.jpg" alt="UGC Rate Card Kit add-on">
+    <div>
+     <span class="pill">Add-on · $4</span>
+     <h3>UGC Rate Card Kit</h3>
+     <p>Know exactly what to charge brands. A rate guide with real numbers, a ready rate card to send, and scripts for "what's your rate?"</p>
+     <p class="hint">Tick <b>"Add to your order"</b> on the checkout page.</p>
+    </div>
+   </div>
    <p class="note">Secure checkout by Stripe · Instant download</p>
   </div>
  </div>
@@ -270,7 +285,7 @@ footer a{color:#F4B9A8}
   <details><summary>How do I get the guide?</summary><p>Right after payment you'll get a download link on screen and by email. It's a PDF you can open on your phone or laptop.</p></details>
   <details><summary>Can I get a refund?</summary><p>Because this is a digital product you get instant access to, all sales are final.</p></details>
   <details><summary>I have another question</summary><p>Email me at <a href="mailto:hello.annamuzova@gmail.com">hello.annamuzova@gmail.com</a>. I read every message.</p></details>
-  <div class="center" style="margin-top:30px"><a class="btn" href="#get">Get the guide for <s class="old">$29</s> $18 →</a></div>
+  <div class="center" style="margin-top:30px"><a class="btn" href="#get">Get the guide for $18 →</a></div>
  </div>
 </section>
 
@@ -282,7 +297,7 @@ footer a{color:#F4B9A8}
  </div>
 </footer>
 
-<div class="sticky" id="sticky"><a class="btn block" href="#get">Get the guide · <s class="old">$29</s> $18</a></div>
+<div class="sticky" id="sticky"><a class="btn block" href="#get">Get the guide · $18</a></div>
 <script>
 (function(){var s=document.getElementById('sticky'),g=document.getElementById('get');
 function f(){var r=g.getBoundingClientRect();var past=window.scrollY>600;var atPrice=r.top<window.innerHeight&&r.bottom>0;s.classList.toggle('show',past&&!atPrice);}
